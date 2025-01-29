@@ -1,0 +1,22 @@
+{
+  "type": "app",
+  "version": "2.0.0",
+  "name": "Serve CLIP as a service",
+  "description": "",
+  "entrypoint": "python -m uvicorn src.main:app --host 0.0.0.0 --port 8000",
+  "docker_image": "supervisely/serve-cas:1.0.0",
+  "port": 8000,
+  "categories": [
+    "neural network",
+    "images",
+    "object detection",
+    "semantic segmentation",
+    "instance segmentation",
+    "metric learning",
+    "statistics"
+  ],
+  "instance_version": "6.12.23",
+  "need_gpu": true,
+  "gpu": "required",
+  "community_agent": false
+}
