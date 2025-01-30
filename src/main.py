@@ -19,4 +19,4 @@ server = app.get_server()
 async def get_vectors_endpoint(request: Request):
     context = request.state.context
     queries = context["queries"]
-    return get_vectors(client, queries)
+    return await get_vectors(client, queries)
